@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Demo of AMSS-Net-Audio Manipulation on User-Specified Sources with Textual Queries">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMSS-Net</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/solo.css">
+  <link rel="stylesheet" href="css/syntax.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/rrssb.css">
+
+  <script src="../scripts/jquery.js"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <link rel="canonical" href="" />
+</head>
+<body>
+  <article>
+   <div class="container">
+    <h1><a href="./index.html">AMSS-Net</a></h1>
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108154870&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/choi-hn" title="Woosung Choi" target="_blank" style="color: #cccccc; text-decoration: none;">Woosung Choi</a> · <a href="https://soundcloud.com/choi-hn/2-2u" title="footprint" target="_blank" style="color: #cccccc; text-decoration: none;">footprint</a></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>order</th>
+      <th>description</th>
+      <th style="text-align: center">Audio</th>
+      <th style="text-align: center">Spectrogram</th>
+      <th style="text-align: center">Wav</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>original</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/footprint__original.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__original_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__original_wav.png" /></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>separate vocals, drums, bass</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/footprint__separate vocals, drums, bass.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__separate vocals, drums, bass_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__separate vocals, drums, bass_wav.png" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>pan drums completely to the right side</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/footprint__pan drums completely to the right side.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__pan drums completely to the right side_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__pan drums completely to the right side_wav.png" /></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>pan bass to the left side</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/footprint__pan bass to the left side.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__pan bass to the left side_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/footprint__pan bass to the left side_wav.png" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/59224973&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/choi-hn" title="Woosung Choi" target="_blank" style="color: #cccccc; text-decoration: none;">Woosung Choi</a> · <a href="https://soundcloud.com/choi-hn/jioliojl" title="똑같은걸로2" target="_blank" style="color: #cccccc; text-decoration: none;">똑같은걸로2</a></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>order</th>
+      <th>description</th>
+      <th style="text-align: center">Audio</th>
+      <th style="text-align: center">Spectrogram</th>
+      <th style="text-align: center">Wav</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>original</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/same__original.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/same__original_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/same__original_wav.png" /></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>apply light highpass to drums</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/same__apply light highpass to drums.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/same__apply light highpass to drums_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/same__apply light highpass to drums_wav.png" /></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>apply heavy highpass to vocals</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/same__apply heavy highpass to vocals.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/same__apply heavy highpass to vocals_spec.png" /></td>
+      <td style="text-align: center"><img src="mm_presentation/same__apply heavy highpass to vocals_wav.png" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>Latent Source Channel</th>
+      <th>similar symbol</th>
+      <th style="text-align: center">Audio</th>
+      <th style="text-align: center">Spectrogram</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N/A</td>
+      <td>origin</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/footprint__original.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/latent_original_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=2, lach=4</td>
+      <td>vocals + bass (low freq)</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/latent_bass.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/latent_bass_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=5, lach=0</td>
+      <td>drums</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/latent_drumsvocals.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/latent_drumsvocals_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=2, lach=6</td>
+      <td>vocals</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/latent_vocals.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/latent_vocals_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=3, lach=5</td>
+      <td>drum (clap-snare),  piano</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="mm_presentation/latent_drums_pianos.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="mm_presentation/latent_drums_pianos_spec.png" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Latent Source Channel</th>
+      <th>similar symbol</th>
+      <th style="text-align: center">Audio</th>
+      <th style="text-align: center">Spectrogram</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N/A</td>
+      <td>origin</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="assets/mm_presentation/footprint__original.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="assets/mm_presentation/latent_original_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=2, lach=4</td>
+      <td>vocals + bass (low freq)</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="assets/mm_presentation/latent_bass.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="assets/mm_presentation/latent_bass_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=5, lach=0</td>
+      <td>drums</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="assets/mm_presentation/latent_drumsvocals.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="assets/mm_presentation/latent_drumsvocals_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=2, lach=6</td>
+      <td>vocals</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="assets/mm_presentation/latent_vocals.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="assets/mm_presentation/latent_vocals_spec.png" /></td>
+    </tr>
+    <tr>
+      <td>head=3, lach=5</td>
+      <td>drum (clap-snare),  piano</td>
+      <td style="text-align: center"><audio controls="" class="audio-player" preload="metadata"><source src="assets/mm_presentation/latent_drums_pianos.mp3" type="audio/mp3" /></audio></td>
+      <td style="text-align: center"><img src="assets/mm_presentation/latent_drums_pianos_spec.png" /></td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+  </article>
+<script src="../scripts/rrssb.min.js"></script>
+</body>
+</html>
